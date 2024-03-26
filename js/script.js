@@ -15,6 +15,7 @@ yesBtn.addEventListener("click", () => {
   noBtn.style.display = "none";
   questionPrompt.style.display = "none"; // Ẩn dòng chữ khi người dùng nhấn vào nút Yes
 });
+
 noBtn.addEventListener("mouseover", () => {
   const noBtnRect = noBtn.getBoundingClientRect();
   const maxX = window.innerWidth - noBtnRect.width;
