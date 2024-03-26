@@ -13,11 +13,16 @@ yesBtn.addEventListener("click", () => {
   // Ẩn cả hai nút Yes và No
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
-  questionPrompt.style.display = "none"; // Ẩn dòng chữ khi người dùng nhấn vào nút Yes và No
+  questionPrompt.style.display = "none"; // Ẩn dòng chữ khi người dùng nhấn vào nút Yes
 });
+noBtn.addEventListener("mouseover", () => {
+  const noBtnRect = noBtn.getBoundingClientRect();
+  const maxX = window.innerWidth - noBtnRect.width;
+  const maxY = window.innerHeight - noBtnRect.height;
 
-noBtn.addEventListener("click", () => {
-  question.innerHTML = "Dỗiiiiiiiiii <br>";
-  gif.src =
-    "https://media1.tenor.com/images/a17ebf72052f630e892e56a32419af97/tenor.gif?itemid=13806507";
+  const randomX = Math.floor(Math.random() * maxX);
+  const randomY = Math.floor(Math.random() * maxY);
+
+  noBtn.style.left = randomX + "px";
+  noBtn.style.top = randomY + "px";
 });
