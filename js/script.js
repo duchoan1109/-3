@@ -3,17 +3,15 @@ const question = document.querySelector(".question");
 const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
-const questionPrompt = document.querySelector(".question-prompt"); // Thêm đoạn này
+const additionalMessage = document.querySelector(".additional-message");
 
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Yêuuuuuuuuu béeeeee mình chit nhaaaaa 🥺<br>";
+  question.innerHTML = "Hẹn e ở sex room :3";
   gif.src =
-    "https://th.bing.com/th/id/R.43d629baac93871acb0c6459d791d766?rik=UtJUnaU6SBh%2fnQ&pid=ImgRaw&r=0";
-
-  // Ẩn cả hai nút Yes và No
+    "https://fr.roomforday.com/galerie/love-room-c108tag1w938.jpg?1506492514";
+  // Ẩn cả hai nút "Yes" và "No"
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
-  questionPrompt.style.display = "none"; // Ẩn dòng chữ khi người dùng nhấn vào nút Yes
 });
 
 noBtn.addEventListener("mouseover", () => {
