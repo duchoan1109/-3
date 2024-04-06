@@ -1,4 +1,4 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,4 +53,3 @@
     background: rgb(235, 224, 224);
     color: #e22242;
   }
-  
