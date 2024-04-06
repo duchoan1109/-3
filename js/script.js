@@ -6,9 +6,9 @@ const noBtn = document.querySelector(".no-btn");
 const additionalMessage = document.querySelector(".additional-message");
 
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Hẹn e ở sex room :3";
+  question.innerHTML = "Tới công chuyện với bà mày rồi =)))))";
   gif.src =
-    "https://fr.roomforday.com/galerie/love-room-c108tag1w938.jpg?1506492514";
+    "https://media.giphy.com/media/MFkTITj69pMOPlbfeX/giphy.gif";
   // Ẩn cả hai nút "Yes" và "No"
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
